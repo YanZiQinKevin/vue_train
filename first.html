@@ -1,1 +1,28 @@
-# Hello world1
+<html>
+    
+<head>
+<title>Vue 基础</title>    
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+  {{ message }}
+<h2>{{ school.name }}</h2>
+<h3>{{compus[0]}}</h3>
+</div>
+<script>
+var app = new Vue({
+  el: '#app',
+  data:{
+    message: 'Hello Vue!!',
+    school:{
+      name: "yanziqin",
+      mobile: "12345"
+    },
+      compus:["北京校区","兰州校区"]
+  }
+})
+
+    </script>    
+</body>
+</html>
