@@ -1,0 +1,38 @@
+<html>
+    
+<head>
+<title>Vue 基础</title>    
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+  
+<h2 v-text="message"></h2>
+<p v-html='content'></p>
+<input type="button" value="v-on指令" v-on:click="doIt">
+<input type="button" value="v-on简写双击" @dblclick="doIt">
+<h2 @click='changeFood'>{{food}}</h2>
+</div>
+<script>
+var app = new Vue({
+  el: '#app',
+  data:{
+      message:"释然",
+      food:"苹果",
+      content:"<a href='http://baidu.com'>百度<a>"
+  },
+   methods:{
+       doIt:function(){
+           alert("做IT")
+       },
+       changeFood:function(){
+       console.log(this.food);
+        this.food +="好好吃!"
+   }
+       
+   }
+})
+
+    </script>    
+</body>
+</html>

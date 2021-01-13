@@ -1,0 +1,42 @@
+<html>
+    
+<head>
+<title>Vue 基础</title>    
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div class="input-num">
+    <button @click="sub">-</button>
+    <span>{{num}}</span>
+    <button @click="add">+</button>
+    </div>
+<script>
+var app = new Vue({
+  el: '.input-num',
+    data:{
+      num:1  
+    },
+    methods:{
+        add:function(){
+           if(this.num<10){
+            this.num+=1
+           }else{
+               alert("最大值")
+           }
+           
+            
+        },
+        sub:function(){
+            if(this.num>0){
+            this.num-=1
+            }else{
+                alert("最小值")
+            }
+        }
+    }
+  
+})
+
+    </script>    
+</body>
+</html>
