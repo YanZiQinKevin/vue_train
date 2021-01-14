@@ -6,21 +6,22 @@
 <body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <div id="app">
-  {{ message }}
-<h2>{{ school.name }}</h2>
-<h3>{{compus[0]}}</h3>
+  <input type="button" value="切换显示状态" @click='changeIsShow'>
+  <img v-show='isShow' src="img/chart.png" alt=""> 
 </div>
 <script> 
 var app = new Vue({
   el: '#app',
   data:{
-    message: 'Hello Vue!!',
-    school:{
-      name: "yanziqin",
-      mobile: "12345"
-    },
-      compus:["北京校区","兰州校区"]
+      isShow:false
+   
+  },
+  methods:{
+      changeIsShow:function(){
+          this.isShow= !this.isShow;
+      }
   }
+    
 })
 
     </script>    

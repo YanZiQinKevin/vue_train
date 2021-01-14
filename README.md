@@ -17,3 +17,6 @@ https://github.com/YanZiQinKevin/assignment-YanZiQinKevin
 **Demo1: 计数器
 
 
+**Day2: 2020-January-14**
+
+指令：v-show（显示，隐藏）: in v-show.html
