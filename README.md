@@ -20,3 +20,7 @@ https://github.com/YanZiQinKevin/assignment-YanZiQinKevin
 **Day2: 2020-January-14**
 
 指令：v-show（显示，隐藏）: in v-show.html
+
+**Day2: 2020-January-15**
+
+添加python生成的Echart图
