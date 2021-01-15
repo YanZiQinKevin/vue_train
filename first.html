@@ -1,20 +1,27 @@
 <html>
     
 <head>
+    <frame-options policy="SAMEORIGIN"/>
+
 <title>Vue 基础</title>    
 </head>
 <body>
+
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <div id="app">
   {{ message }}
+ 
 <h2>{{ school.name }}</h2>
 <h3>{{compus[0]}}</h3>
+
+    <iframe style="width: 1000px; height: 600px;" src='pie_position.html'></iframe>
+
 </div>
 <script> 
 var app = new Vue({
   el: '#app',
   data:{
-    message: 'Hello Vue!!',
+    message: 'ZIQINYAN!!',
     school:{
       name: "yanziqin",
       mobile: "12345"
